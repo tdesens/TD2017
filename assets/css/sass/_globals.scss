@@ -22,7 +22,7 @@ body{
 
 	.wrap{
 		width:95%; 
-		max-width:1000px; 
+		max-width:950px; 
 		margin:0 auto;
 		
 		&:after{clear:both; float:none;}
@@ -105,14 +105,6 @@ hr{
 	&.pink{border-color:$pink;}
 	&.black{border-color:$black;}
 }
-
-
-
-
-
-/* ===== Header ===== */
-
-
 
 
 
@@ -205,6 +197,75 @@ hr{
 		}
 	}
 }
+
+
+
+
+
+/* ===== Forms ===== */
+
+.contact-form{
+	
+	.input-row{
+		position:relative;
+		margin-bottom:25px;
+		
+		input[type="text"],
+		textarea{
+			width:100%;
+			padding:0 20px;
+			font-size:80%;
+			color:$teal;
+			font-weight:bold;
+			position:relative;
+			width:100%; height:45px;
+			border:1px solid $black;
+			@include border-radius(5px);
+			
+			&:focus{
+				outline:none !important;
+			}
+		}
+		
+		textarea{
+			min-height:200px; max-height:200px;
+			height:200px;
+			padding:20px;
+		}
+		
+		label{
+			text-transform: uppercase;
+			font-size:75%;
+			letter-spacing:1px;
+			font-family:$mont;
+			font-weight:400;
+			line-height:45px;
+			position:absolute;
+			padding:0 10px;
+			top:0; left:20px;
+			color:$black;
+			@include defaultTransition;
+		}
+		
+		input[type="text"]:focus + label,
+		input[type="text"]:valid + label,
+		textarea:focus + label,
+		textarea:valid + label{
+			font-size:50%;
+			top:-10px; left:15px;
+			padding:0 10px;
+			background:$white;
+			line-height:20px;
+		}
+		
+		a.button{margin-top:0; float:right;}
+	}
+}
+#required-msg{display:none; color:$pink;}
+.thank-you{display:none;}
+.hidden-form{display:none;}
+
+
 
 /* ===== Footer ===== */
 

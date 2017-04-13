@@ -45,8 +45,8 @@
                     	<li><a href="<?php bloginfo('url'); ?>/work" >Work</a></li>
                     	<li><a href="<?php bloginfo('url'); ?>/services" >Services</a></li>
                     	<li><a href="#" >Articles</a></li>
-						<li><a href="#" >About</a></li>
-						<li><a href="#" >Contact</a></li>
+						<li><a href="<?php bloginfo('url'); ?>/about" >About</a></li>
+						<li><a href="<?php bloginfo('url'); ?>/contact" >Contact</a></li>
 						<li class="hidden-sm hidden-md hidden-lg hidden-xl" ><a href="#" >Start A Project</a></li>
                     </ul>
                 </div><!-- #main-menu -->

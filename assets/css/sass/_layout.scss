@@ -195,3 +195,55 @@
 	}
 	
 }
+
+
+
+/* ===== About ===== */
+#about{
+	margin-bottom:100px;
+	
+	h1{
+		text-align:center;
+		margin-top:100px;}
+	
+	.main-text{
+		display:block;
+		margin-bottom:50px;
+	}
+	
+	#about-photos{
+		
+		.image-wrapper{
+			width:100%; height:500px;
+			background-color:$grey;
+			background-size:cover;
+			background-position:center center;
+			background-repeat:no-repeat;
+			display:block;
+			
+			&.one{}
+			&.two{height:625px;}
+			&.three{height:275px;}
+			&.four{height:275px;}
+		}
+		
+		.caption{
+			font-size:80%;
+			font-style:italic;
+			margin-bottom:50px;}
+	}
+}
+
+/* ===== Contact ===== */
+#contact{
+	margin-bottom:100px;
+	
+	h1{
+		text-align:center;
+		margin-top:100px;}
+	
+	.main-text{
+		display:block;
+		margin-bottom:50px;
+	}
+}
