@@ -1,0 +1,197 @@
+/* ==========================================
+	Layout 
+========================================== */
+
+/* ===== Home ===== */
+#home-hero{
+	padding-top:50px; 
+	
+	hr{
+		margin:20px 0 50px;
+	}
+}
+
+#services-cta{
+	position:relative;
+	color:$white;
+	text-align:left;
+	@include gradient(42deg, $blue, $teal);
+	
+	.main-text{
+		padding:80px 0 20px;
+		position:relative;
+		z-index:1;
+		
+		a.button{text-align:center;}
+	}
+}
+
+
+
+
+
+
+/* ===== Work ===== */
+#work{
+	#featured-project{
+		.carousel{
+			.item{
+				text-align:center;
+				
+				.feature-image{
+					display:block;
+					width:100%; height:500px;
+					margin:0 auto 50px;
+					background-repeat:no-repeat;
+					background-position:center center;
+					background-size:cover;
+					background-attachment: fixed;
+				}
+				
+				.title{}
+				
+				&:first-child{
+					.title:before{
+						content:'Newest:';
+						display:inline-block;
+						margin-right:10px;
+					}
+				}
+			}
+			
+			.carousel-indicators{
+				position:absolute;
+				bottom:190px;
+				
+				.dot{
+					border:none;
+					margin:0 3px;
+					background-color:rgba(0,0,0,.5);
+
+					&.active{background-color:rgba(0,0,0,1); }
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+/* ===== Single Work Post ===== */
+.single{
+	.hero{
+		display:block;
+		width:100%; height:500px;
+		margin:0 auto 50px;
+		background-repeat:no-repeat;
+		background-position:center center;
+		background-size:cover;
+		background-attachment: fixed;
+	}
+	
+	h1{text-align:center; margin-bottom:80px;}
+	
+	#description{
+		margin-bottom:50px;
+	}
+	#challenge{}
+	
+	#solution{
+		margin-top:50px;
+		
+		h2{border-color:$teal}
+		
+		p{
+			font-style:italic;
+			font-weight:bold;
+		}
+	}
+	#photos{
+		img{
+			width:100%; height:auto;
+		}
+	}
+}
+
+
+
+
+/* ===== Services ===== */
+#services{
+	h1{
+		text-align:center;
+		margin-top:100px;}
+	
+	.main-text{
+		display:block;
+		margin-bottom:50px;
+	}
+	
+	#service-intro{
+		margin-bottom:80px;
+		
+		.intro{
+			h2{}
+			p{}
+			a{
+				color:$black;
+				font-family:$mont;
+				font-weight:400;
+				letter-spacing:2px;
+				font-size:12px;
+				text-transform:uppercase;
+
+				&:before{
+					content:'+';
+					display:inline-block;
+					font-size:120%;
+					margin:0 5px 0 0;
+
+				}
+				
+			}
+		}
+		
+	}
+	
+	.service-details{
+		@include gradient(42deg, $blue, $teal);
+		color:$white;
+		margin-bottom:50px;
+		
+		
+		h3{
+			color:$white; 
+			font-size:200%;
+			margin-top:80px;
+			margin-bottom:50px;
+			font-weight:300;
+			letter-spacing:5px;}
+		
+		p{
+			margin-bottom:50px;
+		}
+		
+		ul{
+			list-style:none;
+			margin:0 auto; padding:0 0 80px 0;
+			
+			li{
+				display:inline-block;
+				width:28%;
+				margin-right:5%;
+				border-bottom:1px solid $white;
+				font-size:12px;
+				letter-spacing:2px;
+				font-family:$mont;
+				text-transform:uppercase;
+				padding:10px 0;
+			
+				&:last-child{margin-right:0;}
+			}
+		}
+	}
+	
+}

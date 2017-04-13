@@ -1,0 +1,77 @@
+/* ==========================================
+	Mixins
+========================================== */
+
+// Default Transition
+@mixin defaultTransition{
+	-webkit-transition: all ease-in-out .2s;
+	-moz-transition:all ease-in-out .2s;
+	transition:all ease-in-out .2s;
+}
+
+
+// Box Shadow
+@mixin box-shadow($top, $left, $blur, $color) {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+}
+
+// Border Radius
+@mixin border-radius($radius) {
+	-webkit-border-radius:$radius;
+	-moz-border-radius:$radius;
+	border-radius:$radius;
+}
+
+// Transition
+@mixin transition($all, $ease, $time) {
+	-webkit-transition:$all $ease $time;
+	-moz-transition:$all $ease $time;
+	transition:$all $ease $time;
+}
+
+// Gradient
+@mixin gradient($angle, $color-1, $color-2){
+    background: $color-1; 
+    background: -webkit-linear-gradient($angle, $color-1, $color-2); 
+    background: -o-linear-gradient($angle, $color-1, $color-2); 
+    background: -moz-linear-gradient($angle, $color-1, $color-2); 
+    background: linear-gradient($angle, $color-1, $color-2);  
+}
+ 
+
+// Triangle
+@mixin triangle($bg, $width, $height){
+		background:$bg;
+		width: $width; height: $height;
+		margin:0 auto;
+		-webkit-clip-path: polygon(0% 0%, 100% 0%, 50% 50%);
+		clip-path:  polygon(0% 0%, 100% 0%, 50% 50%);
+}
+
+// Background Blend for Images
+@mixin bg-blend($color, $blendmode, $img){
+	background-image: $img;
+	background-color: $color;
+	background-blend-mode: $blendmode;
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+
+// Gradient
+@mixin gradient($angle, $color-1, $color-2){
+    background: $color-1; 
+    background: -webkit-linear-gradient($angle, $color-1, $color-2); 
+    background: -o-linear-gradient($angle, $color-1, $color-2); 
+    background: -moz-linear-gradient($angle, $color-1, $color-2); 
+    background: linear-gradient($angle, $color-1, $color-2);  
+}
+
+// Opacity
+@mixin opacity($ie, $decimal){
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=$ie)"; // IE8
+	filter: alpha(opacity=$ie); // IE 5-7
+	opacity: $decimal;
+}
+

@@ -1,0 +1,55 @@
+/* ==========================================
+	Responsive Styles
+========================================== */
+
+// Mobile - Smallest screens 
+@media all and (max-width:360px) {
+}
+
+@media all and (min-width:580px){
+}
+
+
+// Mobile - Default 
+@media all and (max-width:768px) {
+}
+
+// Mobile - Tablets
+@media all and (min-width:768px) {
+	
+	h2{
+		padding:10px 100px 1px 0;
+		display:inline-block;
+	}
+	
+	.recent-work .thumb-wrapper{
+		width:46%;
+		margin-bottom:100px;
+		&:nth-child(n+6){width:29%;
+			.project-thumb{height:180px;}
+		}
+		.project-link{font-size:75%;}
+	}
+
+	#work .recent-work .thumb-wrapper:nth-child(n+5){
+		width:29%;
+		
+		.project-thumb{height:180px;}
+	}
+	
+	#work #featured-project .carousel .carousel-indicators{bottom:160px;}
+	
+	.single #solution {margin-top:0;}
+	
+	#services .recent-work .thumb-wrapper:nth-child(n+4){width:29%;}
+}
+
+
+// Mobile - Desktop
+@media all and (min-width:992px) {
+}
+
+// Mobile - Large Screens
+@media all and (min-width:1200px) {
+}
+
